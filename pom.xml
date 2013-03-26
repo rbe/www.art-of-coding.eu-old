@@ -6,7 +6,6 @@
     <!--
         POM.
     -->
-    <groupId>eu.artofcoding</groupId>
     <artifactId>www.art-of-coding.eu</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <!--
@@ -15,7 +14,7 @@
     <parent>
         <groupId>eu.artofcoding</groupId>
         <artifactId>aoc-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
     </parent>
     <!-- Modules. -->
     <modules>
@@ -56,64 +55,9 @@
             [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
         -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--
-            Runtime, Virtual Machine.
-        -->
+        <!-- Java Virtual Machine. -->
         <version.java.vm>1.7</version.java.vm>
-        <!--
-            Libraries.
-        -->
-        <!-- Apache Commons. -->
-        <version.org.apache.commons.logging>1.1.1</version.org.apache.commons.logging>
-        <version.eu.artofcoding.beetlejuice>1.0.0-SNAPSHOT</version.eu.artofcoding.beetlejuice>
-        <!--
-            Java EE.
-        -->
-        <version.javax.javaee-api>6.0</version.javax.javaee-api>
-        <version.javax.enterprise.cdi-api>1.0-SP4</version.javax.enterprise.cdi-api>
-        <!--
-            Unit Testing.
-        -->
-        <version.org.junit>4.10</version.org.junit>
-        <!-- TestNG, http://maven.apache.org/plugins/maven-surefire-plugin/examples/testng.html -->
-        <version.org.testng>6.3.1</version.org.testng>
-        <!--
-            Maven Plugins.
-            http://maven.apache.org/plugins/index.html
-        -->
-        <!-- Maven Compiler Plugin, http://maven.apache.org/plugins/maven-compiler-plugin/ -->
-        <version.org.apache.maven.plugins.maven-compiler-plugin>2.3.2</version.org.apache.maven.plugins.maven-compiler-plugin>
-        <!-- Maven Surefire Plugin, http://maven.apache.org/plugins/maven-surefire-plugin/ -->
-        <version.org.apache.maven.surefire.plugin>2.12</version.org.apache.maven.surefire.plugin>
-        <!-- Maven JAR Plugin -->
-        <version.org.apache.maven.plugins.maven-jar-plugin>2.4</version.org.apache.maven.plugins.maven-jar-plugin>
-        <!-- Maven WAR Plugin -->
-        <version.org.apache.maven.plugins.maven-war-plugin>2.2</version.org.apache.maven.plugins.maven-war-plugin>
-        <!-- Maven Assembly Plugin -->
-        <version.org.apache.maven.plugins.maven-assembly-plugin>2.3</version.org.apache.maven.plugins.maven-assembly-plugin>
-        <!-- Maven Bundle Plugin -->
-        <version.org.apache.maven-bundle-plugin>2.3.7</version.org.apache.maven-bundle-plugin>
     </properties>
-    <build>
-        <!--
-            Build Plugins.
-            http://maven.apache.org/plugins/index.html
-        -->
-        <plugins>
-            <!-- maven-compiler-plugin, http://maven.apache.org/plugins/maven-compiler-plugin/ -->
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${version.org.apache.maven.plugins.maven-compiler-plugin}</version>
-                <configuration>
-                    <testSource>${version.java.vm}</testSource>
-                    <testTarget>${version.java.vm}</testTarget>
-                    <source>${version.java.vm}</source>
-                    <target>${version.java.vm}</target>
-                    <verbose/>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
     <!--
         Build Environment.
     -->

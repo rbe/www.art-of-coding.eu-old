@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="de" lang="de"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:aoc="http://java.sun.com/jsf/composite/aoc">
+<h:head>
+    <title>Art of Coding UG</title>
+    <h:outputStylesheet library="css" name="aoc.css"/>
+    <ui:insert name="head"/>
+</h:head>
+<h:body id="scrollable">
+    <aoc:header/>
+    <div class="row_wrap">
+        <div class="middle_wrap">
+            <div class="scrollcontent">
+                <ui:insert name="content"/>
+            </div>
+        </div>
+    </div>
+    <aoc:footer/>
+    <aoc:javascript/>
+    <ui:insert name="javascript"/>
+</h:body>
+</html>

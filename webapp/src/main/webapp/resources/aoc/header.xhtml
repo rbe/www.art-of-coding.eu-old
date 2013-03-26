@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:cc="http://java.sun.com/jsf/composite"
+      xmlns:h="http://java.sun.com/jsf/html">
+<ui:component>
+    <cc:interface>
+    </cc:interface>
+    <cc:implementation>
+        <div id="header">
+            <div id="header_menu_background"></div>
+            <div id="header_menu_opener">Men&uuml;</div>
+            <div id="header_menu_logo"></div>
+            <div id="header_menu">
+                <ul>
+                    <li>
+                        <div><span><h:outputLink value="programmierung.xhtml">Programmierung</h:outputLink></span></div>
+                        <div class="header_menu_subtitle color1">&lt; Was wir leisten &gt;</div>
+                        <div class="header_submenu">
+                            <h:outputLink value="sprachen.xhtml"><span>Sprachen</span></h:outputLink><br/>
+                            <h:outputLink value="rahmenwerke.xhtml"><span>Rahmenwerke</span></h:outputLink>
+                        </div>
+                    </li>
+                    <!--
+                    <li>
+                        <div><span><a href="bildung.xhtml">Bildung</a></span></div>
+                        <div class="header_menu_subtitle color2">&lt; Was wir lehren &gt;</div>
+                    </li>
+                    -->
+                    <li>
+                        <div><span><h:outputLink value="kunst.xhtml">Kunst</h:outputLink></span></div>
+                        <div class="header_menu_subtitle color3">&lt; Wie wir arbeiten &gt;</div>
+                    </li>
+                    <li>
+                        <div><span><h:outputLink value="werke.xhtml">Werke</h:outputLink></span></div>
+                        <div class="header_menu_subtitle color4">&lt; Woran wir arbeiten &gt;</div>
+                    </li>
+                    <li>
+                        <div><span><h:outputLink value="wir.xhtml">Wir</h:outputLink></span></div>
+                        <div class="header_menu_subtitle color5">&lt; Wer wir sind &gt;</div>
+                    </li>
+                </ul>
+            </div>
+            <div id="header_menu_right">
+                <h:outputLink value="index.xhtml" target="_self">Start<span>&lt; Seite &gt;</span></h:outputLink>&nbsp;&nbsp;//&nbsp;
+                <h:outputLink value="kontakt.xhtml" target="_self">Kontakt<span>&lt; Daten &gt;</span></h:outputLink>&nbsp;&nbsp;//&nbsp;
+                <h:outputLink value="impressum.xhtml" target="_self">Impressum<span>&lt; muss ja &gt;</span></h:outputLink>
+            </div>
+        </div>
+    </cc:implementation>
+</ui:component>
+</html>

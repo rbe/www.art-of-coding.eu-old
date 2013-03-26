@@ -1,17 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
-
-<h:head>
-    <title>Art of Coding</title>
-</h:head>
-
-<h:body>
-    Place your content here
-</h:body>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="de" lang="de"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<ui:composition template="/resources/index-layout.xhtml">
+    <ui:define name="teaser">
+        <div class="teaser first">
+            <h2>24. Oktober 2012</h2>
+            <p>
+                Cannot Move Uploaded Files in PHP<br/>
+                <a href="http://post.ly/9doq4" target="_blank">http://post.ly/9doq4</a>
+            </p>
+        </div>
+        <div class="teaser">
+            <h2>24. Oktober 2012</h2>
+            <p>
+                Convert an existing Tomcat User Database<br/>to Digestes Passwords<br/>
+                <a href="http://post.ly/5zoqa" target="_blank">http://post.ly/5zoqa</a>
+            </p>
+        </div>
+    </ui:define>
+    <ui:define name="javascript">
+        <script type="text/javascript" language="JavaScript">
+            //<![CDATA[
+            $(document).ready(function() {
+                var colorFooter = '#be1b23';
+                init(colorFooter);
+                // Hintergrund einblenden
+                $.backstretch("#{resource['images/background/index.jpg']}");
+                changeColors(colorFooter);
+            });
+            //]]>
+        </script>
+    </ui:define>
+</ui:composition>
 </html>

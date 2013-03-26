@@ -21,18 +21,24 @@
         <param-value>/WEB-INF/faces-config.xml</param-value>
     </context-param>
     -->
+    <context-param>
+        <param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
+        <param-value>true</param-value>
+    </context-param>
     <!--
         Filters.
     -->
     <!-- Encoding Filter -->
+    <!--
     <filter>
         <filter-name>Encoding Filter</filter-name>
         <filter-class>eu.artofcoding.beetlejuice.web.EncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>Encoding Filter</filter-name>
-        <url-pattern>/*</url-pattern>
+        <servlet-name>Faces Servlet</servlet-name>
     </filter-mapping>
+    -->
     <!--
         Servlets.
     -->

@@ -14,12 +14,13 @@
     <!--
         Managed Beans.
     -->
-    <!-- language -->
+    <!-- language
     <managed-bean>
         <managed-bean-name>language</managed-bean-name>
         <managed-bean-class>eu.artofcoding.beetlejuice.web.LanguageBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
+    -->
     <!--
         Application.
     -->
@@ -28,7 +29,7 @@
             Multilanguage.
         -->
         <locale-config>
-            <default-locale>en</default-locale>
+            <default-locale>de</default-locale>
             <supported-locale>de</supported-locale>
         </locale-config>
         <!-- Resource bundle for messages in menus
